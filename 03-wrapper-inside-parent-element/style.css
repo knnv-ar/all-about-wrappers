@@ -1,0 +1,21 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  color: #aaa;
+}
+
+.wrapper {
+  width: min(100% - 40px,60rem);  /* this is it */
+  margin-inline: auto;
+}
+
+.padding {
+  padding-block: clamp(2rem, 0.1818181818rem + 7.7575757576vw, 6rem);
+}
+
+.bg-magenta {
+  background: linear-gradient(45deg, hsl(300, 100%, 36%) 10%, hsl(258, 100%, 26%));
+}

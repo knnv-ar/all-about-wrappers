@@ -1,0 +1,28 @@
+body {
+  font-family: "Hiragino Kaku Gothic Pro", "MS PGothic", sans-serif;
+  background-color: #f7f7f7;
+  color: #333;
+  writing-mode: vertical-rl; /* Escritura de arriba hacia abajo, de derecha a izquierda */
+  text-align: justify; /* Justificación del texto en la columna vertical */
+}
+
+.wrapper {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}

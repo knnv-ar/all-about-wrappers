@@ -1,0 +1,16 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.wrapper {
+  max-width: 60rem; /* this is it */
+  margin-inline: auto; /* better than 'margin: 0 auto;' if internationalization */
+}
+
+.padding {
+  padding-block: clamp(2rem, 0.1818181818rem + 7.7575757576vw, 6rem);
+}

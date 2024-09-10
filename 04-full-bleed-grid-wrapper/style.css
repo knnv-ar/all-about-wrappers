@@ -1,0 +1,53 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #aaa;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+.wrapper {
+  width: min(100% - 40px,60rem);  /* this is it */
+  margin-inline: auto;
+}
+
+.padding {
+  padding-block: clamp(2rem, 0.1818181818rem + 7.7575757576vw, 6rem);
+}
+
+.bg-magenta {
+  background: linear-gradient(45deg, hsl(300, 100%, 36%) 10%, hsl(258, 100%, 26%));
+}
+
+.fb-wrapper {
+  display: grid;
+  grid-template-columns: 1fr min(100% - 40px,60rem) 1fr;
+}
+
+.fb-wrapper > * {
+  grid-column: 2;
+}
+
+.fb-wrapper > .fullbleed {
+  grid-column: 1/-1;
+}
+
+.bg-image {
+  background-image: url("../img/mike-l-8Qr1ixi-rMU-unsplash.jpg");
+}
